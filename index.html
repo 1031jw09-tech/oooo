@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>에버블루 재단 | EverBlue Foundation</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f6fbfd;
+      color: #053b4d;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(10px);
+      z-index: 1000;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    header h1 {
+      font-weight: 600;
+      color: #0d5c75;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #0d5c75;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #007ea7;
+    }
+
+    section {
+      min-height: 100vh;
+      padding: 100px 10%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    section:nth-child(even) {
+      background-color: #e8f6fa;
+    }
+
+    h2 {
+      font-size: 2.2em;
+      margin-bottom: 20px;
+      color: #054a61;
+    }
+
+    p {
+      font-size: 1.1em;
+      max-width: 700px;
+      margin-bottom: 20px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 25px;
+      background-color: #007ea7;
+      color: #fff;
+      border-radius: 25px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .button:hover {
+      background-color: #00a4d6;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #053b4d;
+      color: #fff;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+
+    /* 스크롤 페이드인 효과 */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 1s ease;
+    }
+
+    .fade-in.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🌊 EverBlue Foundation</h1>
+    <nav>
+      <a href="#intro">소개</a>
+      <a href="#activities">핵심 활동</a>
+      <a href="#campaign">캠페인 참여</a>
+      <a href="#news">뉴스·스토리</a>
+      <a href="#contact">후원·문의</a>
+    </nav>
+  </header>
+
+  <section id="intro" class="fade-in">
+    <h2>에버블루 재단 소개</h2>
+    <p>
+      에버블루 재단은 해양 생태계 보호를 위해 설립된 비영리 단체입니다.  
+      우리는 바다의 숨결이 곧 지구의 미래라고 믿습니다.  
+      깨끗한 해양을 지키기 위한 교육, 정화 활동, 시민 캠페인을 통해  
+      ‘바다가 푸르면, 지구가 숨 쉰다’는 철학을 실천합니다.
+    </p>
+  </section>
+
+  <section id="activities" class="fade-in">
+    <h2>핵심 활동</h2>
+    <p>
+      🌿 <strong>해양 쓰레기 줄이기 프로젝트</strong> – 플라스틱 프리 캠페인 전개  
+      🐢 <strong>해양 생물 복원</strong> – 바다거북 서식지 복원 및 산란지 정화  
+      🌎 <strong>환경 교육</strong> – 청소년 대상 해양 생태 강의 및 체험 활동 운영  
+      📊 <strong>데이터 기반 보호</strong> – 바다 오염도를 AI로 모니터링  
+    </p>
+  </section>
+
+  <section id="campaign" class="fade-in">
+    <h2>캠페인 참여</h2>
+    <p>
+      누구나 함께할 수 있습니다!  
+      온라인 서명, 지역 정화 봉사, SNS 캠페인 등 다양한 방법으로  
+      바다를 지키는 일에 동참해 주세요.
+    </p>
+    <a href="#" class="button">참여 신청하기</a>
+  </section>
+
+  <section id="news" class="fade-in">
+    <h2>뉴스 · 스토리</h2>
+    <p>
+      📰 “에버블루 재단, 제주 해양 정화 100회 달성!”  
+      🌊 “고등학생 자원봉사자들의 손으로 바다가 달라지고 있습니다.”  
+      💙 “플라스틱 제로 학교 캠페인, 전국으로 확산 중!”
+    </p>
+    <a href="#" class="button">더 보기</a>
+  </section>
+
+  <section id="contact" class="fade-in">
+    <h2>후원 및 문의</h2>
+    <p>
+      여러분의 관심이 바다를 지킵니다.  
+      후원 및 협력 문의는 아래 이메일로 연락해주세요.  
+      <br><br>
+      📧 everbluefoundation@oceanmail.org
+    </p>
+    <a href="#" class="button">후원하기</a>
+  </section>
+
+  <footer>
+    © 2025 EverBlue Foundation | 제작: 충렬여고 1학년 6반
+  </footer>
+
+  <script>
+    // 스크롤 시 섹션 페이드인 효과
+    const fadeEls = document.querySelectorAll('.fade-in');
+    const options = { threshold: 0.2 };
+
+    const observer = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+        }
+      });
+    }, options);
+
+    fadeEls.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
